@@ -1,0 +1,22 @@
+.menu {
+  background-color: lightgray;
+  width: 250px;
+  text-align: center;
+  font-size: 48px;
+}
+
+.birinci {
+  background-color: black;
+  color: white;
+  font-family: "Audiowide", cursive;
+ 
+}
+
+.aktif {
+  background-color: aqua;
+  font-family:"Silkscreen";
+}
+
+div{
+    font-family: "Aboreto";
+}
