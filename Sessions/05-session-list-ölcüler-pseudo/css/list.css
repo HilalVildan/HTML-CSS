@@ -1,0 +1,40 @@
+*{
+    font-family: 'DynaPuff', cursive;
+    /* color: orange; */
+}
+
+li{
+    background-color: gray;
+    color: red;
+    /* lilere verilen colordan a tagleri etkilenmez */
+}
+
+a{
+    color: orange;
+    text-decoration: none;
+}
+
+.aktif{
+    background-color: black;
+}
+
+.aktif:hover{
+    background-color: pink;
+}
+
+li:hover{
+    background-color: red;
+    color:aqua
+}
+
+a:hover{
+    color: blueviolet;
+}
+
+.list{
+    list-style-position: inside;
+    list-style-type: "🍒";
+    font-size: 25px;
+    
+
+}
