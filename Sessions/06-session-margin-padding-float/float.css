@@ -1,0 +1,25 @@
+img{
+ width:50%;
+ float:right;
+}
+.temizle{
+ clear:right;
+}
+.box{
+ height:2rem;
+ float:right;
+}
+
+.box1{
+ width:20%;
+ background-color:rgb(213, 58, 213);
+}
+.box2{
+ width:30%;
+ background-color:rgb(111, 31, 96);
+
+}
+.box3{
+ width:40%;
+ background-color: orange;;
+}
