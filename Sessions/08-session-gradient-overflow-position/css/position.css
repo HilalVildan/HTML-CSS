@@ -1,0 +1,67 @@
+*{
+ /* margin:0; */
+}
+.box{
+ width:130px;
+ height:130px;
+}
+
+.box1{
+ background-color: aquamarine;
+/*Relative'de bulunduğu yere (normalde olması gerektiği yere göre) göre konum belirlenebilir*/
+ position:relative;
+ left:32px;
+ top:48px;
+ border: 2px solid ;
+ z-index:3;
+ /* z-index ile bir element'i diğerinin üzerine koyabilmek için o elementlerin position'ları static olMAMAlıdır. sayı büyük olan üsttedir,ardışık olmaları yeterli*/
+}
+
+.box2{
+ background-color:blueviolet;
+color:white;
+ position:absolute;
+ left:32px;
+ top:48px;
+ /* absolute=body ye göre yerleşir, relative=üst elemente göre, üstündekiyle aynı ölçüleri alırsa tam alt alta gelir.
+   !relative kendi başına hareket eder,etrafındakileri kıpırdatmaz yerini değiştirmez, yeni gelen onun bıraktığı yerden gelir, absolute kıpırdayınca yeri boşalır, yeni gelen absolute lı kutu yok gibi davranır*/
+ z-index:1;
+}
+/* burada parent olmadığı için absolute=browser a ye göre yerleşir, relative=olması gereken yere göre,padding varsa padding le olması gereken yere göre kıpırdar*/
+.box3{
+ background-color:yellow;
+ border:2px solid red;
+ position:relative;
+ left:32px;
+ top:16px;
+ z-index:4;
+}
+.box4{
+ background-color:pink;
+ position:relative;
+ left:32px;
+
+ top:16px;
+}
+
+.parent{
+ border:5px solid green;
+ width:150px;
+ height:150px;
+ position:absolute;
+ top:16px;
+ right:16px;
+
+ /* bu   div in parent ı body old için body ye göre üstten ve sağdan 16 px boşluk bırakır, kutu sağa yapışır, bottom verirsek alta yapışır. */
+ /* absolute padding den etkilenmez parent ına göre kıpırdar */
+ padding-top:15px;
+}
+
+
+.box5{
+ /* child div, parent ında bir position varsa,absolute ile yine parent div ine göre kıpırdar ama parent ına position vermezsek yine body ye göre şekil alır */
+ background-color:coral;
+ position:absolute;
+ top:10px;
+ left:10px;
+}
