@@ -65,3 +65,23 @@ color:white;
  top:10px;
  left:10px;
 }
+
+.box6{
+    background-color: darkcyan;
+    position: fixed;
+    /* olduğu yerde kalır, koordinat vermek zorunda değilsiniz. ama verirseniz absolute gibi body ye göre şekil alır ve oraya fix lenir */
+    bottom: 16px;
+    right: 16px;
+}
+
+
+.box7{
+    background-color: red;
+    margin: 48px auto;
+
+    position: sticky;
+    /* top olcusu vermelisin yoksa calismaz */
+    top: 5px;
+
+
+}
