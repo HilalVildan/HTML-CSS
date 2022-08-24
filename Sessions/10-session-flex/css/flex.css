@@ -1,0 +1,101 @@
+.container1 div {
+  background-color: tomato;
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem;
+}
+
+.container1 {
+  background-color: antiquewhite;
+  display: flex;
+  /* flex-direction: column; */
+  /* default olarak row alir tek satirda 
+  olmalarini istersek üstteki gibi column yazabiliriz */
+  flex-wrap: wrap;
+  /* sigamayan varsa asagi insin demek  */
+  justify-content: space-evenly;
+  /*! Yatay Hizalama: Justify-center
+  /**  /** flex-start: Nesneler kapsayıcının başından başlayarak dizilirler.*/
+  /**space-around: Nesneler arasında eşit boşluklar bırakılır.
+  /**space-between: İlk nesne başta, son nesne sonda olacak şekilde nesneler eşit olarak kapsayıcının içerisinde dizilirler.
+  /**center: Nesneler tam ortalı olacak şekilde hizalanır.
+  /**flex-end: Son nesne ve diğerleri en sağa yaslanacak şekilde hizalanır. */
+
+  margin-bottom: 10px;
+}
+
+.container2 div{
+    background-color: cornflowerblue;
+    width: 5rem;
+    height: 10rem;
+    margin: 1rem;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2{
+background-color: pink;
+height: 20rem;
+display: flex;
+justify-content: flex-end;
+align-items: baseline;
+/*! Dikey Hizalama => align-items
+  /**flex-start: Nesneler, kapsayıcının en üstünden başlayarak dizilirler.
+/**flex-end: Nesneler, kapsayıcının en altından başlayarak, yukarı doğru dizilirler.
+/**center: Nesneler ortalı bir şekilde dikey olarak sıralanırlar.
+/**baseline: yazıların yerine bakılır, sıradanlığı bozan yazı tipi göz önüne alınarak hizalanmaya başlanılır.
+/**stretch: Tüm nesneler kapsayıcı yüksekliğine eşit olacak şekilde dizilirler. */
+
+margin-bottom: 10px;
+}
+
+
+.container2 div:nth-child(1){
+    height: 5rem;
+}
+.container2 div:nth-child(2){
+    height: 7rem;
+    padding-top: 4rem;
+}
+.container2 div:nth-child(3){
+    height: 2rem;
+    padding: 0.5rem;
+}
+
+
+
+.uls div{
+
+    background-color: violet;
+    width: 4rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.uls{
+    background-color: darkgray;
+  list-style-type: none;
+  height: 30rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  /* align-items:flex-start; */
+
+  align-content:flex-start;
+
+/*!Çok satırlı verilerin dikeyde hizalanması için kullanılır.
+ bütün elemanlar yukarı çıkıyorlar. 
+ align-items: center sadece üstte kalan verileri üste yapıştırır*/
+
+  gap:4rem 1rem;
+  /*?gap, flex içerisindeki elemanların dikey ve 
+yatay boşluklarını belirlemek için kullanılabilir.
+ ilk yazılan  (satırlar arası yukarı aşağı) boşluk, 2. yazılan ise (sutunlar arası, sağ sol) boşluktur */
+}
