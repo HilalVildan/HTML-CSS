@@ -99,3 +99,41 @@ margin-bottom: 10px;
 yatay boşluklarını belirlemek için kullanılabilir.
  ilk yazılan  (satırlar arası yukarı aşağı) boşluk, 2. yazılan ise (sutunlar arası, sağ sol) boşluktur */
 }
+
+
+
+.container4{
+  background-color:chocolate;
+  display: flex;
+  /* position: absolute; */
+  padding: 1rem 0;
+}
+
+.container4 div{
+  background-color: yellow;
+  width: 5rem;
+ margin: 1rem;
+ 
+
+}
+
+.grow1{
+ flex-grow: 1;
+ 
+ /*  default büyüme olsun */
+}
+.grow2 {
+  /*? grow2 classindakiler diğerlerine göre 2 kat daha fazla büyüyebilir.*/
+  flex-grow: 2;
+
+}
+.grow3 {
+  /*? grow3 classindakiler diğerlerine göre 3 kat daha fazla büyüyebilir.*/
+  flex-grow: 3;
+
+}
+.grow4 {
+  /*? grow classindakiler diğerlerine göre hiç büyümezler*/
+  flex-grow: 0;
+
+}
