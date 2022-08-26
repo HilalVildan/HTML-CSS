@@ -1,0 +1,59 @@
+.container {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  /* 1fr 1fr 1fr 1fr=repeat(4,1fr) fr=fraksiyon */
+  grid-template-rows: repeat(4, 15vh) 15vh 15vh;
+
+  /* rows larda fr kullanımı yok, çünkü taşan eleman olursa ona yer kalsın diye */
+  gap: 10px 15px;
+}
+
+.parca {
+  background-color: yellowgreen;
+  border: 1px solid gray;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.parca1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  /* 1.sütundan başla 3 e kadar gel, 3 dahil değil */
+  background-color: pink;
+}
+.parca4 {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-color: orange;
+}
+.parca6 {
+
+  background-color: rgb(216, 53, 216);
+
+ /* grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 5; */
+  
+/** alternatif yol */
+grid-area: 2 / 3 /span 2/span 2;
+/* satır başlangıc/sütun başlangıç/ satırda kaç parça/ sütunda kaç parça */
+background-image:url(../../assets/winter2.webp);
+}
+
+.parca9{
+ background-color:aqua;
+ grid-row-start:4;
+ grid-row-end:6;
+
+ grid-column:3;
+ /* grid-column-start:2;
+ grid-column-end:3; */
+}
+.parca8{
+ background-color:yellow;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
