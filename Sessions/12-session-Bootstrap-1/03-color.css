@@ -1,0 +1,8 @@
+.baslik{
+    color: blue !important;
+    text-decoration: none;
+}
+
+/* benim css im bootstrap i ezer sadece bootstrap te 
+!important eklenenleri ezemez. onları da 
+ezmek istiyorsak bizde !important yazmalıyız */
